@@ -1,7 +1,7 @@
 package starcraft;
 
-public class Scv extends Unit implements Repairable {
-	private Scv() {
+public class Scv extends Unit implements Repairable, Attackable {
+	Scv() {
 		super("Scv", 55);
 	}
 
@@ -10,7 +10,7 @@ public class Scv extends Unit implements Repairable {
 			Unit target = (Unit) unit;
 
 			while (target.hp < target.MAX_HP) {
-				target.hp++;
+
 				String messege = String.format("%s 수리중[%d/%d]", target.name, target.hp, target.MAX_HP);
 				System.out.println(messege);
 
