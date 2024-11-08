@@ -4,7 +4,7 @@ import interferses.Repairable;
 import starcraft.GroundUnit;
 
 public class Scv extends GroundUnit implements Repairable {
-	Scv() {
+	public Scv() {
 		super("Scv", 55, 5);
 	}
 

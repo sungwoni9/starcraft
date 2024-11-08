@@ -20,7 +20,7 @@ public interface Attackable {
 					target.hp = 0;
 					System.out.printf("%s 펑~~\n", target.name);
 				}
-				attackCnt--; // 공격 횟수 감소
+				attackCnt--; 
 			}
 		} else {
 			System.out.printf("%s는 공격할 수 없는 대상입니다.\n", attacker.name);

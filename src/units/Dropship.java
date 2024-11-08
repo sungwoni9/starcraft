@@ -1,9 +1,10 @@
 package units;
 
+import interferses.Repairable;
 import starcraft.AirUnit;
 
-public class Dropship extends AirUnit {
-	Dropship() {
+public class Dropship extends AirUnit implements Repairable {
+	public Dropship() {
 		super("Dropship", 55);
 	}
 
