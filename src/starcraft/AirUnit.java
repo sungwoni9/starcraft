@@ -2,9 +2,9 @@ package starcraft;
 
 public abstract class AirUnit extends Unit {
 
-	AirUnit(String name, int hp) {
+	protected AirUnit(String name, int hp) {
 		super(name, hp);
 	}
 
-	 abstract void flying();
+	 protected abstract void flying();
 }

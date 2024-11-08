@@ -2,8 +2,8 @@ package starcraft;
 
 public abstract class GroundUnit extends Unit{
 
-	GroundUnit(String name, int hp) {
-		super(name, hp);
+	protected GroundUnit(String name, int hp, int power) {
+		super(name, hp, power);
 	}
 
 }
